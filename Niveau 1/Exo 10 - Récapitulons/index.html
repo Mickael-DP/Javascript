@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exo 10 JS</title>
+        
+    </head>
+    <script>
+
+        var nbraleatoire = Math.round(Math.random() * 100)
+        console.log (nbraleatoire)
+        var nbrchoisi = prompt("Choisi ton numéro")
+        var essai = 3
+
+        while(nbrchoisi != nbraleatoire && essai > 0){
+            essai--
+
+            if (nbrchoisi > nbraleatoire) {
+                alert("C'est un peu trop")
+            } else {
+                alert("C'est pas assez")
+            }
+            if (essai > 0) {
+                nbrchoisi = prompt("Retenter votre chance") 
+            }
+        }
+
+        if(nbrchoisi == nbraleatoire) {
+            alert ('Bravo')
+        } else {
+            alert ('Echec')    
+        }
+      
+
+    </script>
+    <body>
+        <h1>Exercice 10 : Récapitulons</h1>
+        <p>Le jeu du plus ou moins</p>
+    </body>
+</html>
