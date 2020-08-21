@@ -33,7 +33,7 @@ function action(param){
 
 
 /*///////////////////////////////////////////////////////////// 
-    La méthode qui me permettra d'appaler a chaque fois la 
+    La méthode qui me permettra d'appeler a chaque fois la 
 la fonction action au clic.  
 /////////////////////////////////////////////////////////////*/
 
