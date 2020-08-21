@@ -1,0 +1,107 @@
+* {
+    font-family: 'Arvo', serif;
+}
+
+body {
+    display: flex;
+    background-color: #e5edf6
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.ensemble {
+    display: flex;
+    flex-direction: column;
+}
+
+.corpsdisque {
+    position: relative;
+    margin:auto;
+}
+
+.definition {
+    padding: 15px;
+
+}
+
+.def {
+    display: none;
+}
+
+.def-active {
+    display: block;
+}
+
+
+.btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.774);
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+.btn-active {
+    background-color: rgba(212, 0, 0, 0.774);
+}
+
+
+#disc-epaule {
+    top: 83px;
+}
+
+#disc-coude {
+    top: 184px;
+    left: 105px;
+}
+
+#disc-poignet {
+    top: 219px;
+    left: -12px;
+}
+
+#disc-hanche {
+    top: 235px;
+    left: 79px;
+}
+
+#disc-genou {
+    top: 339px;
+    left: 22px;
+}
+
+#disc-cheville {
+    top: 425px;
+    left: 64px;
+   
+}
+
+
+@media screen and (min-width: 700px) {  
+ 
+    .schemadesc {
+        display: flex;
+        justify-content: center;
+    }
+    .ensemble {
+        width: 32%;
+        flex-direction: row;
+    }
+
+    .corpsdisque {
+        margin: unset;
+    }
+    
+    .definition {
+        padding-left: 40px;
+    }
+    
+}
