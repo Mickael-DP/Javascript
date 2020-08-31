@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <button id="boutton1"></button>
+        <button id="boutton2"></button>
+
+        <script >
+            const btn1 = document.querySelector ("#boutton1")
+            const btn2 = document.querySelector("#boutton2")
+
+            btn1.addEventListener("click", function(){console.log("hello world !")})
+
+            btn2.addEventListener("click", function(){
+                let exemple1 = prompt ("Quel est votre nom ?")
+                let exemple2 = confirm ("Est ce que c'est vraiment " + exemple1 + " ?")
+                if (exemple2){
+                  alert("Bonjour " + exemple1)  
+                } else (
+                    alert ("Au revoir !")
+                )
+            })
+        </script>
+        
+    </body>
+</html>
