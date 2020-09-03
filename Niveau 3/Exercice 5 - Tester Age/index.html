@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1>Exercice 5 - Tester Age</h1>
+        <script>
+
+            let a
+            function enterUser (){
+                while(Number.isNaN(a) || a%1!==0 || a < 0 ){
+                    a = prompt("Quel est ton age ?")
+            }
+                return a
+            }
+            
+            let age = enterUser ()
+
+            if (age < 18){
+                alert("Vous n'avez pas le droit de venir")
+            } else if (age >= 18 && age <= 50){
+                alert ("Vous êtes majeur mais pas encore senior, la vie est belle")
+            } else if (age >= 51 && age <= 60){
+                alert ("Vous êtes senior mais pas encore retraité")
+            } else {
+                alert ("Vous êtes retraité, profitez de votre temps libre !")
+            }
+            
+
+        </script>
+
+    </body>
+</html>
