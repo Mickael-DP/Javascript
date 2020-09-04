@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<htm lang="fr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <script>
+            
+            let Today = new Date(Date.now())
+            let Birthday = new Date("February 02, 2021")
+ 
+            let diff = new Number ((Birthday.getTime() - Today.getTime()) / 86400000).toFixed(0)
+
+            document.write ("<p> Ajourd'hui, nous sommes le " + Today + "</p>")
+            document.write ("<p> Mon anniversaire est le " + Birthday + "</p>")
+            document.write ("<p><strong>Alors, il ne reste plus que "+ diff + " jours avant mon anniversaire! </strong></p>" )
+
+
+        </script>
+
+
+
+
+
+
+    </body>
+
+</html>
