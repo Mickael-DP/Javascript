@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<htm lang="fr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+
+        <button onclick="AddName(listName, tabList)">Ajoutez un nom</button>
+        <button onclick="Choose(tabList)">Tirage au sort</button>
+        <div class="tab"></div>
+
+
+        <script>
+            let listName = document.querySelector (".tab")
+            let tabList = []
+
+            function AddName(tabList, tab){
+                let enterName = prompt("Veuillez saisir un nom:")
+                tab.push(enterName)
+                listName.innerHTML += enterName + "<br>" 
+            }
+
+
+            function Choose(tab) {
+                let tirage = Math.floor(Math.random() * tab.length)
+                alert ("Le Gagnant est: " + tabList[tirage])
+            }
+
+       
+
+        </script>
+    </body>
+</html>
