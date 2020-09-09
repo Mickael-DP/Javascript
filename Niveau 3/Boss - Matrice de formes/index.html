@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <style>
+
+        .line {
+            display: flex;
+           justify-content: center;
+        }
+        .carre {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            margin: 30px;
+        }
+
+        .rond {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 50%;
+            margin: 30px;
+        }
+
+        .losange {
+            display: block;
+            width: 90px;
+            height: 90px;
+            border: 2px solid red;
+            margin: 30px;
+            transform:rotate(45deg);
+
+        }
+
+        .plein {
+            background-color: red;
+            transition: background-color 1s linear;
+        }
+    
+    </style>
+
+
+    <body>
+
+        <div class="line">
+            <span class="carre"></span>
+            <span class="rond"></span>
+            <span class="col rond"></span>
+            <span class="rond"></span>
+            <span class="rond"></span>
+        </div>
+        <div class="line">
+            <span class="rond"></span>
+            <span class="carre"></span>
+            <span class="col rond"></span>
+            <span class="rond"></span>
+            <span class="rond"></span>
+        </div>
+        <div class="line">
+            <span class="rond"></span>
+            <span class="rond"></span>
+            <span class="losange"></span>
+            <span class="rond"></span>
+            <span class="rond"></span>
+        </div>
+        <div class="line">
+            <span class="rond"></span>
+            <span class="rond"></span>
+            <span class="col rond"></span>
+            <span class="carre"></span>
+            <span class="rond"></span>
+        </div>
+        <div class="line">
+            <span class="rond"></span>
+            <span class="rond"></span>
+            <span class="col rond"></span>
+            <span class="rond"></span>
+            <span class="carre"></span>
+        </div>
+
+        <button id="plein" style="display: none;"></button>
+        <button id="vide"style="display: none;"></button>
+     
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>
