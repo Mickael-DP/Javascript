@@ -1,5 +1,5 @@
 const formRond = document.querySelectorAll(".rond")
-const ligne = document.querySelectorAll(".line")
+const ensemble = document.querySelectorAll("span")
 const formCarre = document.querySelectorAll(".carre")
 const formLosange = document.querySelector (".losange")
 const colonne = document.querySelectorAll(".col")
@@ -8,11 +8,15 @@ const formVide = document.querySelector("#vide")
 
 
 formPlein.addEventListener("click", function(){
-    formPlein.classList.add("plein")
+    for (i = 0 ; i < ensemble.length; i++){
+        ensemble[i].classList.add("plein")
+    }   
 })
 
 formVide.addEventListener("click", function(){
-    formVide.classList.remove("plein")
+    for (i = 0 ; i < ensemble.length; i++){
+        ensemble[i].classList.remove("plein")
+    } 
 })
 
 

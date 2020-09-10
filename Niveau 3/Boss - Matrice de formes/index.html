@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     
     <style>
@@ -9,6 +10,16 @@
         .line {
             display: flex;
            justify-content: center;
+        }
+
+        #plein {
+            height: 35px;
+            width: 100px;
+        }
+        #vide {
+            height: 35px;
+            width: 100px;
+        
         }
         .carre {
             display: block;
@@ -46,7 +57,7 @@
 
 
     <body>
-
+        
         <div class="line">
             <span class="carre"></span>
             <span class="rond"></span>
@@ -83,11 +94,13 @@
             <span class="carre"></span>
         </div>
 
-        <button id="plein" style="display: none;"></button>
-        <button id="vide"style="display: none;"></button>
+        <button id="plein">Remplir</button>
+        <button id="vide">Vider</button>
      
         
-        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
+        <script src="jquery.js"></script>
+        
 
     </body>
 </html>
